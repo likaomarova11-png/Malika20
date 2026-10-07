@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MAELYN Beauty Atelier — премиальный салон красоты">
+<title>MAELYN — Beauty Atelier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#home">MAELYN<span>BEAUTY ATELIER</span></a>
+  <nav>
+    <a href="#home">Главная</a><a href="#services">Услуги</a><a href="#about">О нас</a>
+    <a href="#team">Команда</a><a href="#gallery">Галерея</a><a href="#contact">Контакты</a>
+  </nav>
+  <a class="outline-btn" href="#booking">Записаться <b>↗</b></a>
+  <button class="menu" type="button" aria-label="Меню">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-photo"></div><div class="hero-shade"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">BEAUTY · STYLE · RITUAL</p>
+    <h1>Красота,<br>созданная<br><em>для вас.</em></h1>
+    <p class="lead">Премиальное пространство, где каждая деталь создана для вашего комфорта и сияния.</p>
+    <a class="gold-btn" href="#booking">Записаться на визит <b>→</b></a>
+  </div>
+  <div class="hero-side">ALMATY · EST. 2026</div>
+</section>
+
+<section class="services section" id="services">
+  <div class="section-intro">
+    <p class="eyebrow gold">НАШИ УСЛУГИ</p>
+    <h2>Искусство<br><em>ухода за собой.</em></h2>
+    <p>Мы подбираем процедуры индивидуально, чтобы подчеркнуть именно вашу красоту.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><span>01</span><h3>Волосы</h3><p>Стрижка, укладка, окрашивание и уходовые ритуалы.</p><strong>от 15 000 ₸</strong></article>
+    <article class="card"><span>02</span><h3>Ногти</h3><p>Маникюр, педикюр и безупречное покрытие.</p><strong>от 9 000 ₸</strong></article>
+    <article class="card"><span>03</span><h3>Макияж</h3><p>Дневной или выразительный вечерний образ.</p><strong>от 18 000 ₸</strong></article>
+    <article class="card"><span>04</span><h3>Брови</h3><p>Архитектура, ламинирование и выразительный взгляд.</p><strong>от 8 000 ₸</strong></article>
+  </div>
+</section>
+
+<section class="quote">
+  <div><span class="quote-mark">“</span><h2>Luxury is not what you wear.<br><em>It is how you feel.</em></h2><p>MAELYN BEAUTY ATELIER</p></div>
+  <div class="candle"></div>
+</section>
+
+<section class="about section" id="about">
+  <div class="salon-image"></div>
+  <div class="about-copy">
+    <p class="eyebrow gold">ПОЧЕМУ МЫ</p>
+    <h2>MAELYN —<br>это больше, чем<br><em>просто салон красоты.</em></h2>
+    <p>Это пространство, где стиль, забота и профессионализм объединяются ради вашей уверенности и вдохновения.</p>
+    <div class="features"><div>◇<small>ПРЕМИУМ<br>УРОВЕНЬ</small></div><div>♡<small>ИНДИВИДУАЛЬНЫЙ<br>ПОДХОД</small></div><div>✧<small>ПРОФЕССИОНАЛЬНЫЕ<br>МАСТЕРА</small></div><div>◈<small>ГАРАНТИЯ<br>КАЧЕСТВА</small></div></div>
+  </div>
+</section>
+
+<section class="team section" id="team">
+  <div class="team-heading"><p class="eyebrow gold">НАША КОМАНДА</p><h2>Профессионалы,<br><em>которые вдохновляют.</em></h2><p>Мастера, которым можно доверить ваш образ.</p></div>
+  <div class="team-grid">
+    <article><img src="images/team1.jpg" alt="Алина"><h3>Алина</h3><p>Парикмахер-стилист</p></article>
+    <article><img src="images/team2.jpg" alt="Жанна"><h3>Жанна</h3><p>Мастер маникюра</p></article>
+    <article><img src="images/team3.jpg" alt="Аружан"><h3>Аружан</h3><p>Визажист</p></article>
+    <article><img src="images/team4.jpg" alt="София"><h3>София</h3><p>Бровист</p></article>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="booking-box">
+    <p class="eyebrow">YOUR MOMENT</p><h2>Подарите себе<br><em>немного роскоши.</em></h2>
+    <p>Заполните форму — в этой автономной версии заявка не отправляется в интернет, а только показывает подтверждение на вашем компьютере.</p>
+    <form id="form">
+      <label>Ваше имя<input name="name" required placeholder="Малика"></label>
+      <label>Телефон<input name="phone" required placeholder="+7 777 000 00 00"></label>
+      <label>Услуга<select name="service"><option>Волосы</option><option>Ногти</option><option>Макияж</option><option>Брови</option></select></label>
+      <label>Желаемая дата<input type="date" name="date"></label>
+      <button class="gold-btn full" type="submit">Подтвердить заявку <b>→</b></button>
+    </form>
+    <p class="success" id="success" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="gallery section" id="gallery">
+  <p class="eyebrow gold">АТМОСФЕРА MAELYN</p><h2>Красота<br><em>в деталях.</em></h2>
+  <div class="gallery-grid"><img src="images/hero.jpg" alt="Атмосфера MAELYN"><img src="images/details.jpg" alt="Детали интерьера"><img src="images/salon.jpg" alt="Интерьер салона"></div>
+</section>
+
+<section class="contact section" id="contact">
+  <div><p class="eyebrow gold">ЖДЁМ ВАС</p><h2>MAELYN<br><em>Beauty Atelier</em></h2></div>
+  <div class="contact-data"><p><small>АДРЕС</small>Алматы, проспект Достык, 40</p><p><small>ЧАСЫ РАБОТЫ</small>Ежедневно · 10:00 — 21:00</p><p><small>ТЕЛЕФОН</small>+7 777 000 20 26</p></div>
+</section>
+</main>
+
+<footer><span>© 2026 MAELYN Beauty Atelier</span><span>Beauty, with intention.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
